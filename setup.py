@@ -9,7 +9,7 @@ if sys.version_info.major != 3:
 
 
 setup(name='magic',
-      version='0.0',
+      version='0.1.1',
       description='MAGIC',
       author='',
       author_email='',
