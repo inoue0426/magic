@@ -53,7 +53,7 @@ All the dependencies will be automatically installed using the above commands
 2. `test_magic.m` -- Shows how to run MAGIC. Also included is a function for loading 10x format data (`load_10x.m`)
 
 ##### Interactive command line
-A tutorial on MAGIC usage and results visualization for single cell RNA-seq data can be found in this notebook: https://nbviewer.jupyter.org/github/dpeerlab/magic/blob/develop/notebooks/Magic_single_cell_RNAseq.ipynb
+A tutorial on MAGIC usage and results visualization for single cell RNA-seq data can be found in this notebook: https://nbviewer.jupyter.org/github/dpeerlab/magic/blob/published/notebooks/Magic_single_cell_RNAseq.ipynb
 
 
 ##### GUI
