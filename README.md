@@ -34,17 +34,17 @@ For a tutorial on how to use the GUI, please go inside docs and open: magic_tuto
 #### Installation and dependencies for the Python version
 1. The Python3 version of MAGIC can be installed using:
 
-        $> git clone git://github.com/pkathail/magic.git
+        $> git clone https://github.com/dpeerlab/magic.git
         $> cd magic
-        $> sudo -H pip3 install .
+        $> pip3 install .
 
 2. MAGIC depends on a number of `python3` packages available on pypi and these dependencies are listed in `setup.py`
 All the dependencies will be automatically installed using the above commands
 
 3. After pulling updates to MAGIC from github, the package must be uninstalled and reinstalled:
 		
-		$> sudo -H pip3 uninstall magic
-		$> sudo -H pip3 install .
+		$> pip3 uninstall magic
+		$> pip3 install .
 		
 #### Usage
 
@@ -53,7 +53,7 @@ All the dependencies will be automatically installed using the above commands
 2. test_magic.m -- Shows how to run MAGIC. Also included is a function for loading 10x format data (load_10x.m)
 
 ##### Interactive command line
-A tutorial on MAGIC usage and results visualization for single cell RNA-seq data can be found in this notebook: http://nbviewer.jupyter.org/github/pkathail/magic/blob/develop/notebooks/Magic_single_cell_RNAseq.ipynb
+A tutorial on MAGIC usage and results visualization for single cell RNA-seq data can be found in this notebook: https://nbviewer.jupyter.org/github/dpeerlab/magic/blob/develop/notebooks/Magic_single_cell_RNAseq.ipynb
 
 
 ##### GUI
