@@ -792,7 +792,7 @@ class SCData:
             ):
                 data = self.pca
             else:
-                data = magic.MAGIC_core.run_pca(
+                data = magicdpeerlab.MAGIC_core.run_pca(
                     self.data, n_components=n_pca_components, random=random_pca
                 )
         else:
@@ -1421,7 +1421,7 @@ class SCData:
         rescale_percent=99,
     ):
 
-        new_data = magic.MAGIC_core.magic(
+        new_data = magicdpeerlab.MAGIC_core.magic(
             self.data.values,
             n_pca_components=n_pca_components,
             random_pca=random_pca,
@@ -1439,7 +1439,7 @@ class SCData:
         )
 
         # Construct class object
-        scdata = magic.mg.SCData(
+        scdata = magicdpeerlab.mg.SCData(
             new_data, data_type=self.data_type, data_prefix="MAGIC "
         )
         self.magic = scdata
@@ -1464,5 +1464,5 @@ class SCData:
             dfs.append(temp)
         df_concat = pd.concat(dfs, join=join, axis=axis)
 
-        scdata = magic.mg.SCData(df_concat)
+        scdata = magicdpeerlab.mg.SCData(df_concat)
         return scdata
