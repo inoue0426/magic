@@ -1,21 +1,22 @@
 import os
-import sys
 import shutil
-from setuptools import setup
+import sys
 from warnings import warn
+
+from setuptools import setup
 
 if sys.version_info.major != 3:
     raise RuntimeError("Magic requires Python 3")
 
 
 setup(
-    name="magic_dpeerlab",
+    name="magicdpeerlab",
     version="0.1.1",
     description="MAGIC",
     author="",
     author_email="",
     package_dir={"": "src"},
-    packages=["magic_dpeerlab"],
+    packages=["magicdpeerlab"],
     install_requires=[
         "numpy>=1.10.0",
         "pandas>=0.18.0",
@@ -28,7 +29,7 @@ setup(
         "statsmodels",
         "tables",
     ],
-    scripts=["src/magic_dpeerlab/magic_gui.py", "src/magic_dpeerlab/MAGIC.py"],
+    scripts=["src/magicdpeerlab/magic_gui.py", "src/magicdpeerlab/MAGIC.py"],
 )
 
 
