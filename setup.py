@@ -5,31 +5,31 @@ from setuptools import setup
 from warnings import warn
 
 if sys.version_info.major != 3:
-    raise RuntimeError('Magic requires Python 3')
+    raise RuntimeError("Magic requires Python 3")
 
 
-setup(name='magic',
-      version='0.1.1',
-      description='MAGIC',
-      author='',
-      author_email='',
-      package_dir={'': 'src'},
-      packages=['magic'],
-      install_requires=[
-          'numpy>=1.10.0',
-          'pandas>=0.18.0',
-          'scipy>=0.14.0',
-          'matplotlib',
-          'seaborn',
-          'scikit-learn',
-          'networkx',
-          'fcsparser',
-          'statsmodels',
-          'tables'
-      ],
-      scripts=['src/magic/magic_gui.py',
-               'src/magic/MAGIC.py'],
-      )
+setup(
+    name="magic",
+    version="0.1.1",
+    description="MAGIC",
+    author="",
+    author_email="",
+    package_dir={"": "src"},
+    packages=["magic"],
+    install_requires=[
+        "numpy>=1.10.0",
+        "pandas>=0.18.0",
+        "scipy>=0.14.0",
+        "matplotlib",
+        "seaborn",
+        "scikit-learn",
+        "networkx",
+        "fcsparser",
+        "statsmodels",
+        "tables",
+    ],
+    scripts=["src/magic/magic_gui.py", "src/magic/MAGIC.py"],
+)
 
 
 # get location of setup.py
