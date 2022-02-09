@@ -9,13 +9,13 @@ if sys.version_info.major != 3:
 
 
 setup(
-    name="magic",
+    name="magic_dpeerlab",
     version="0.1.1",
     description="MAGIC",
     author="",
     author_email="",
     package_dir={"": "src"},
-    packages=["magic"],
+    packages=["magic_dpeerlab"],
     install_requires=[
         "numpy>=1.10.0",
         "pandas>=0.18.0",
@@ -28,7 +28,7 @@ setup(
         "statsmodels",
         "tables",
     ],
-    scripts=["src/magic/magic_gui.py", "src/magic/MAGIC.py"],
+    scripts=["src/magic_dpeerlab/magic_gui.py", "src/magic_dpeerlab/MAGIC.py"],
 )
 
 
