@@ -11,7 +11,6 @@ from copy import deepcopy
 from subprocess import PIPE, Popen, call
 
 import matplotlib
-
 # try:
 #     os.environ['DISPLAY']
 # except KeyError:
@@ -38,7 +37,8 @@ from scipy.spatial.distance import squareform
 from scipy.stats import gaussian_kde
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
-from sklearn.manifold._t_sne import _joint_probabilities, _joint_probabilities_nn
+from sklearn.manifold._t_sne import (_joint_probabilities,
+                                     _joint_probabilities_nn)
 from sklearn.neighbors import NearestNeighbors
 
 import magicdpeerlab
@@ -303,7 +303,7 @@ class SCData:
 
     @magic.setter
     def magic(self, item):
-        if not (isinstance(item, magic.mg.SCData) or item is None):
+        if not (isinstance(item, magicdpeerlab.mg.SCData) or item is None):
             raise TypeError("self.magic must be a SCData object")
         self._magic = item
 
