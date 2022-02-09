@@ -1,10 +1,11 @@
 import numpy as np
 import pandas as pd
-from scipy.sparse import issparse, csr_matrix, find
-from sklearn.metrics.pairwise import pairwise_distances
-from sklearn.manifold._t_sne import _joint_probabilities, _joint_probabilities_nn
-from sklearn.decomposition import PCA
+from scipy.sparse import csr_matrix, find, issparse
 from scipy.spatial.distance import squareform
+from sklearn.decomposition import PCA
+from sklearn.manifold._t_sne import (_joint_probabilities,
+                                     _joint_probabilities_nn)
+from sklearn.metrics.pairwise import pairwise_distances
 from sklearn.neighbors import NearestNeighbors
 
 

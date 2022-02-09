@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/magicdpeerlab/MAGIC.py
+src/magicdpeerlab/MAGIC_core.py
+src/magicdpeerlab/__init__.py
+src/magicdpeerlab/magic_gui.py
+src/magicdpeerlab/mg.py
+src/magicdpeerlab.egg-info/PKG-INFO
+src/magicdpeerlab.egg-info/SOURCES.txt
+src/magicdpeerlab.egg-info/dependency_links.txt
+src/magicdpeerlab.egg-info/requires.txt
+src/magicdpeerlab.egg-info/top_level.txt
